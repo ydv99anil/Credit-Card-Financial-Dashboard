@@ -8,15 +8,18 @@ The dashboard enables real-time monitoring of key credit card metrics, helping a
 - Evaluate product uptake and utilization patterns.
 
 ## 📁 Repository Contents
-File/Folder	Description
-credit_card.csv	Main transaction dataset
-customer.csv	Customer demographic data
-cc_add.csv	Additional transaction data
-cust_add.csv	Additional customer data
-cc_sql.sql	SQL script for MySQL database & tables
-Credit card dashboard.pbix	Power BI dashboard file
-CREDIT_CARD_CUSTOMER_REPORT.pdf	PDF: customer insights
-CREDIT_CARD_TRANSACTION_REPORT.pdf	PDF: transaction analysis
+
+| File/Folder | Description |
+|-------------|-------------|
+| `credit_card.csv` | Main transaction dataset |
+| `customer.csv` | Customer demographic and profile data |
+| `cc_add.csv` | Additional credit card transactional data |
+| `cust_add.csv` | Additional customer data |
+| `cc_sql.sql` | SQL script for creating MySQL database and tables |
+| `Credit card dashboard.pbix` | Power BI dashboard file |
+| `CREDIT_CARD_CUSTOMER_REPORT.pdf` | PDF report: customer insights |
+| `CREDIT_CARD_TRANSACTION_REPORT.pdf` | PDF report: transaction analysis |
+
 
 ## 🛠️ How to Use
 ### 1. Database Setup
@@ -36,7 +39,7 @@ FIELDS TERMINATED BY ','
 ENCLOSED BY '"'
 LINES TERMINATED BY '\n'
 IGNORE 1 ROWS;
-
+```
 
 - Repeat the process for other CSVs and tables.
 
