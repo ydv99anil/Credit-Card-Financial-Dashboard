@@ -23,16 +23,20 @@ CREDIT_CARD_TRANSACTION_REPORT.pdf	PDF: transaction analysis
 - Run cc_sql.sql in MySQL to create the database and tables.
 - Import CSVs into MySQL using MySQL Workbench or:
 
-### 2. Loading Data
-#### Importing with MySQL Workbench
-- Ensure OPT_LOCAL_INFILE=1 is enabled in your connection settings.
+## 2. Loading Data
+
+**Importing with MySQL Workbench**
+
+- Ensure `OPT_LOCAL_INFILE=1` is enabled in your connection settings.
 - Use:
+```sql
 LOAD DATA LOCAL INFILE 'path/to/credit_card.csv'
-INTO TABLE table_name
+INTO TABLE cc_detail
 FIELDS TERMINATED BY ','
 ENCLOSED BY '"'
 LINES TERMINATED BY '\n'
 IGNORE 1 ROWS;
+
 
 - Repeat the process for other CSVs and tables.
 
@@ -46,8 +50,8 @@ IGNORE 1 ROWS;
 - Update database connection credentials.
 - Refresh datasets and explore the reports:
 - Explore the interactive dashboards:
--  Credit Card Transaction Report: Overall transactions, revenue, interest and product insights.
--  Credit Card Customer Report: Customer segments, age, income, gender, activation and behavior.
+  - Credit Card Transaction Report: Overall transactions, revenue, interest and product insights.
+  - Credit Card Customer Report: Customer segments, age, income, gender, activation and behavior.
 
  ### 4. Reports
 - View PDF reports for printable summaries of customer and transaction insights.
