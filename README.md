@@ -22,9 +22,9 @@ The dashboard enables real-time monitoring of key credit card metrics, helping a
 
 
 ## 🛠️ How to Use
-### 1. Database Setup
-- Run cc_sql.sql in MySQL to create the database and tables.
-- Import CSVs into MySQL using MySQL Workbench or:
+### 1. Data Preparation & SQL
+- Edit and run cc_sql.sql to create the database and tables in your MySQL server.
+- Import each CSV into the relevant table using MySQL Workbench or LOAD DATA LOCAL INFILE for best performance (see below for details).
 
 ## 2. Loading Data
 
